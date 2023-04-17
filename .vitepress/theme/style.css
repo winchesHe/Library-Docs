@@ -37,7 +37,7 @@
   --vp-home-hero-name-background: linear-gradient(
     30deg,
     #b880bc 0%,
-    rgb(200, 123, 144) 40%
+    var(--vp-c-brand-dark) 40%
   );
 }
 

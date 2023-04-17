@@ -4,5 +4,6 @@
     "quickstart",
     "settimeout",
     "Vitepress"
-  ]
+  ],
+  "unocss.root": ["./"]
 }

@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { vite } from './configs'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -6,6 +7,7 @@ export default defineConfig({
   description: '使用Vitepress从0搭建组件库文档网站',
   srcDir: 'src',
   srcExclude: ['**/README.md', '**/TODO.md'],
+  vite,
   outDir: '../dist',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config

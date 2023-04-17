@@ -28,7 +28,6 @@
     "*": {
       "*": [
         "./dist/*",
-        
         "./dist/index.d.ts"
       ]
     }
@@ -49,7 +48,10 @@
     "rimraf": "^4.1.2",
     "simple-git-hooks": "^2.8.1",
     "typescript": "^4.9.5",
-    "vitepress": "1.0.0-alpha.65"
+    "unocss": "^0.51.4",
+    "vite": "^4.2.1",
+    "vitepress": "1.0.0-alpha.65",
+    "vue": "^3.2.47"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
