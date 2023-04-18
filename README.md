@@ -6,7 +6,7 @@
 
 - [x] [自定义主题样式](https://github.com/winchesHe/Library-Docs/commit/424d3e8b0ac16e3ca37acbc44a956ab5cceb01e2)
 
-- [ ] 自定义内容展示
+- [x] [自定义内容展示](https://github.com/winchesHe/Library-Docs/commit/73b44fff6b7f6bb558ebda800361174472fc149c)
 
 - [ ] `Element-Plus` 组件支持
 
