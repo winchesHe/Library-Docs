@@ -10,7 +10,7 @@
 
 - [x] [`Element-Plus` 组件支持](https://github.com/winchesHe/Library-Docs/commit/34aa73416b4d67ec8be56e17309a3a8e1659d92e)
 
-- [ ] `Element-Plus` 组件自定义主题样式
+- [x] [`Element-Plus` 组件自定义主题样式](https://github.com/winchesHe/Library-Docs/commit/17920d1cde7417d46e9a49b53458459fae5ada66)
 
 - [ ] 编写 `Vite` 插件向 `md` 文件添加自定义资源
 
@@ -29,3 +29,7 @@
 - [ ] 自动化部署
 
 - [ ] 接入 `Google Analytics` 网站数据分析
+
+## 🛠️ More
+
+- [ ] 主屏样式移动端适配（**导航栏切换主题按钮**）
