@@ -10,6 +10,7 @@ function changeColor() {
   rootStyle.setProperty('--vp-c-brand', newColor)
   rootStyle.setProperty('--vp-c-brand-light', newSeriesColor.light[2])
   rootStyle.setProperty('--vp-c-brand-lighter', newSeriesColor.light[4])
+  rootStyle.setProperty('--vp-c-brand-lightest', newSeriesColor.light[6])
   rootStyle.setProperty('--vp-c-brand-dark', newSeriesColor.dark[0])
   rootStyle.setProperty('--vp-c-brand-darker', newSeriesColor.dark[1])
 }

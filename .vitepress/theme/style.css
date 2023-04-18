@@ -3,12 +3,12 @@
  * -------------------------------------------------------------------------- */
 
  :root {
-  --vp-c-brand: #fa9ab4;
-  --vp-c-brand-light: rgb(251, 164, 188);
-  --vp-c-brand-lighter: rgb(252, 184, 203);
-  --vp-c-brand-lightest: rgb(253, 205, 218);
-  --vp-c-brand-dark: rgb(225, 139, 162);
-  --vp-c-brand-darker: rgb(200, 123, 144);
+  --vp-c-brand: #45c5de;
+  --vp-c-brand-light: rgb(125, 214, 232);
+  --vp-c-brand-lighter: rgb(143, 220, 235);
+  --vp-c-brand-lightest: rgb(162, 226, 239);
+  --vp-c-brand-dark: rgb(62, 177, 200);
+  --vp-c-brand-darker: rgb(55, 158, 178);
   --vp-c-brand-dimm: rgba(145, 71, 150, 0.08);
 }
 
