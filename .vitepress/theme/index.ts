@@ -4,6 +4,7 @@ import ElementPlus from 'element-plus'
 import type { Theme as ThemeType } from 'vitepress'
 import HomePage from '../components/HomePage.vue'
 import Wave from '../components/Wave.vue'
+import NavColor from '../components/NavColor.vue'
 import { define } from '~/utils/types'
 
 import 'uno.css'
@@ -17,6 +18,7 @@ export default define<ThemeType>({
     return h(Theme.Layout, null, {
       'home-hero-before': () => h(Wave),
       'home-features-after': () => h(HomePage),
+      'nav-bar-content-after': () => h(NavColor),
     })
   },
   enhanceApp: ({ app }) => {

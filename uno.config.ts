@@ -13,5 +13,7 @@ export default defineConfig({
   exclude: [`${__dirname}/node_modules/**/*`],
   rules: [
     ['bg-theme', { background: 'var(--vp-c-brand)' }],
+    ['comp-bg-theme', { background: 'var(--el-color-primary)' }],
+    ['comp-text-theme', { color: 'var(--el-color-primary)' }],
   ],
 })
