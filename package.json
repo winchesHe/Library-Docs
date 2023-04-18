@@ -48,9 +48,10 @@
     "rimraf": "^4.1.2",
     "simple-git-hooks": "^2.8.1",
     "typescript": "^4.9.5",
+    "unocss": "^0.51.4",
+    "unplugin-vue-components": "^0.24.1",
     "vite": "^4.2.1",
-    "vitepress": "1.0.0-alpha.65",
-    "unocss": "^0.51.4"
+    "vitepress": "1.0.0-alpha.65"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
@@ -61,7 +62,9 @@
     ]
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^2.1.0",
     "@vueuse/core": "^10.0.2",
+    "element-plus": "^2.3.3",
     "vue": "^3.2.47"
   }
 }

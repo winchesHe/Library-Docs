@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computeSeriesColors, randomColor } from '../../utils'
+import { computeSeriesColors, randomColor } from '~/utils/color'
 
 function changeColor() {
   const newColor = randomColor()

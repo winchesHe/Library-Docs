@@ -10,7 +10,10 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
-    "types": ["vite/client", "vitepress"]
+    "types": ["vite/client", "vitepress", "element-plus/global"],
+    "paths": {
+      "~/*": ["./*"]
+    }
   },
   "include": ["**/*", ".vitepress/**/*"],
   "exclude": ["node_modules"]
