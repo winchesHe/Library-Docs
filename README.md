@@ -8,7 +8,7 @@
 
 - [x] [自定义内容展示](https://github.com/winchesHe/Library-Docs/commit/73b44fff6b7f6bb558ebda800361174472fc149c)
 
-- [ ] `Element-Plus` 组件支持
+- [x] [`Element-Plus` 组件支持](https://github.com/winchesHe/Library-Docs/commit/34aa73416b4d67ec8be56e17309a3a8e1659d92e)
 
 - [ ] `Element-Plus` 组件自定义主题样式
 
