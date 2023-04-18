@@ -10,6 +10,8 @@
 
 - [ ] `Element-Plus` 组件支持
 
+- [ ] `Element-Plus` 组件自定义主题样式
+
 - [ ] 编写 `Vite` 插件向 `md` 文件添加自定义资源
 
 - [ ] 编写 `Vitepress` 插件编译 `md` 文件，实现自动化插入组件及 `Template` 代码示例
