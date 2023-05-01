@@ -39,7 +39,7 @@ function changeColor(type: string) {
       <div style="width: 2rem; height: 2rem;" b-rd comp-bg-theme />
     </div>
 
-    <h2 text="center lg" font-bold my-5>
+    <h2 text="center lg" font-bold my-5 mt-10>
       💕 Thanks to all the contributors!
     </h2>
 
