@@ -44,6 +44,12 @@ export default defineConfig({
       pattern: 'https://github.com/winchesHe/Library-Docs/tree/main/src/:path',
       text: 'Edit this page on GitHub',
     },
+
+    footer: {
+      message: 'Made with ❤️',
+      copyright:
+        'MIT License © 2023 <a href="https://github.com/winchesHe">winchesHe</a>',
+    },
   },
   head: [
   ],
