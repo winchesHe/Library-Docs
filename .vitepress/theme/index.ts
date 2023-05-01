@@ -5,6 +5,7 @@ import type { Theme as ThemeType } from 'vitepress'
 import HomePage from '../components/HomePage.vue'
 import Wave from '../components/Wave.vue'
 import NavColor from '../components/NavColor.vue'
+import { global } from '../components/global'
 import { define } from '~/utils/types'
 
 import 'uno.css'
@@ -22,6 +23,9 @@ export default define<ThemeType>({
     })
   },
   enhanceApp: ({ app }) => {
+    global.forEach(([compName, comp]) => {
+      app.component(compName, comp)
+    })
     app.use(ElementPlus)
   },
 })

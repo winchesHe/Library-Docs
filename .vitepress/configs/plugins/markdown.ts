@@ -1,5 +1,7 @@
 import path from 'node:path'
 import type { Plugin } from 'vite'
+import glob from 'fast-glob'
+import { examplesDir } from '../../../utils'
 
 type Append = Record<'headers' | 'footers' | 'scriptSetups', string[]>
 
@@ -19,11 +21,11 @@ function combineMarkdown(code: string,
 
   if (headers.length > 0) {
     code
-      = code.slice(0, sliceIndex) + headers.join('\n') + code.slice(sliceIndex)
+      = code.slice(0, sliceIndex) + headers.join('') + code.slice(sliceIndex)
   }
-  code += footers.join('\n')
+  code += footers.join('')
 
-  return `${code}\n`
+  return `${code}`
 }
 
 export function MarkdownTransform(): Plugin {
@@ -43,6 +45,31 @@ export function MarkdownTransform(): Plugin {
         scriptSetups: [
           `const demos = import.meta.globEager('../../examples/${componentId}/*.vue')`,
         ],
+      }
+
+      // 获取组件
+      const components = await glob('*', {
+        cwd: examplesDir,
+        onlyDirectories: true,
+      })
+
+      // 如果是组件md文件则添加贡献者
+      if (components.some(compName => componentId.includes(compName))) {
+        const sourcePath = `https://github.com/winchesHe/Library-Docs/blob/main/src/component/${componentId}.md`
+        const sourceText = `[${componentId}源码](${sourcePath})`
+
+        const sourceInfo = `
+## 源码
+
+${sourceText}
+`
+        const contributorInfo = `
+## 贡献者
+
+<Contributor source="${componentId}" />
+`
+
+        append.footers.push(sourceInfo, contributorInfo)
       }
 
       return combineMarkdown(

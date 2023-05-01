@@ -95,3 +95,8 @@
 .dark .vp-doc .custom-block a {
   transition: color 0.25s;
 }
+
+.contributor-wrap .VPTeamMembersItem {
+  width: 13rem;
+  border-radius: 50px;
+}

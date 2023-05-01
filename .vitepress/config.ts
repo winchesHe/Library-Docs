@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-import { vite } from './configs'
+import { vite } from './configs/vite'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -39,7 +39,13 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
     ],
+
+    editLink: {
+      pattern: 'https://github.com/winchesHe/Library-Docs/tree/main/src/:path',
+      text: 'Edit this page on GitHub',
+    },
   },
   head: [
   ],
+  lastUpdated: true,
 })
