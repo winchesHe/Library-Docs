@@ -1,6 +1,7 @@
 import type { UserConfig } from 'vite'
 import Unocss from 'unocss/vite'
 import { rootDir } from '../../utils/path'
+import { MarkdownTransform } from './plugins'
 
 export const vite: UserConfig = {
   resolve: {
@@ -15,5 +16,6 @@ export const vite: UserConfig = {
     Unocss({
       configFile: '../../uno.config.ts',
     }),
+    MarkdownTransform(),
   ],
 }
